@@ -1,0 +1,60 @@
+
+/* Put header text on image */
+.img-group {
+  position: relative;
+  display: inline-block;
+}
+.img-text {
+  position: absolute;
+  top: 0;
+  text-align: center;
+  width: 100%;
+}
+/* Set Text style which on image */
+.img-text h1 {
+	color: brown;
+}
+.img-text p {
+	font-weight: bold;
+	color: saddlebrown;
+}
+
+/* Transparency image */
+#trans-img {
+	opacity: 0.5;
+	filter: alpha(opacity=50); /* for old version IE browser */
+}
+
+/* Set body background image */
+body {
+	background-image: url('background.jpg');
+}
+
+/* Set aside tag on left page, class right on right page */
+.left-side {
+	float:left;
+	width: 30%;
+}
+.right-side {
+	float:left;
+	width: 70%;
+}
+
+/* On right page divde two side left for meal name, right side for meal price */
+.page {
+	float:left; width:100%;
+}
+.meal {
+	float:left; width:70%;
+}
+.price {
+	float:right; width:30%;
+	p {
+		font-size: : 20px;
+	}
+}
+
+ /* Set Footer text in the center */
+footer {
+	text-align: center;
+}
