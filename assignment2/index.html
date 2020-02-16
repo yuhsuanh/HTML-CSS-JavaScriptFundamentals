@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ca">
+	<head>
+		<meta charset="UTF-8">
+		<title>Page Title</title>
+		<style type="text/css">
+			body {
+				background-image: url('background.jpg');
+				background-size: cover;
+			}
+			h1 {
+				color: floralwhite;
+			}
+			.formarea {
+				background-color: rgba(255, 255, 255, 0.5);
+			 	backdrop-filter: blur(5px);
+			}
+			footer {
+				color: azure;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Pizza Order System</h1>
+		</header>
+		<main>
+			<form class="formarea" action="https://yuhsuan-huang-tw.000webhostapp.com/assign2/progress.html">
+				<fieldset>
+					<legend>Customer</legend>
+					<div>
+						<label for="name">Name: </label>
+						<input type="text" id="name" name="name" required>
+					</div>
+					<div>
+						<label for="phone">Phone: </label>
+						<input type="phone" id="phone" name="phone" required>
+					</div>
+					<div>
+						<label for="email">E-mail: </label>
+						<input type="email" id="email" name="email">
+					</div>
+					<div>
+						<label for="date">Date:</label>
+						<input type="date" id="date" name="date" min="2020-02-14">
+					</div>
+					<div>
+						<label for="area">Area: </label>
+						<select name="area" id="area">
+							<optgroup label="Onatrio">
+								<option value="Toronto">Toronto</option>
+								<option vale="barrie">Barrie</option>
+								<option value="Mississauga">Mississauga</option>
+								<option value="Ottawa">Ottawa</option>
+								<option value="Markham">Markham</option>
+								<option value="Richmond Hill">Richmond Hill</option>
+								<option value="Niagara Falls">Niagara Falls</option>
+							</optgroup>
+							<optgroup label="Quebec">
+								<option value="Montreal">Montreal</option>
+								<option value="Quebec">Quebec</option>
+							</optgroup>
+						</select>
+					</div>
+				</fieldset>
+				
+				<fieldset>
+					<legend>Order:</legend>
+					<div>
+						<label for="numpizza">Number of Pizzas:</label>
+		    			<input type="number" id="numpizza" name="numpizza" required>
+					</div>
+					<div>
+						<label for="size">Size(number of slices)</label>
+						<!-- <input type="number" id="size" name="size"> -->
+						<select>
+							<option value="6">Small: 6 slices</option>
+							<option value="8">Medium: 8 slices</option>
+							<option value="10">Large: 10 slices</option>
+							<option value="12">X-Large: 12 slices</option>
+						</select>
+					</div>
+					<div>
+						<label for="shape">Shape</label>
+						<!-- <input type="text" id="shape" name="shape"> -->
+						<input type="radio" id="square" name="shape" value="square">
+						<label for="square">Square</label>
+						<input type="radio" id="round" name="shape" value="round">
+						<label for="round">Round</label>
+					</div>
+					<div>
+						<label>Topping</label>
+						<!-- <input type="text" id="topping" name="topping"> -->
+						<div>
+							<input type="checkbox" id="pepperoni" name="topping" value="pepperoni">
+							<label for="pepperoni">Pepperoni</label><br>
+							<input type="checkbox" id="mushrooms" name="topping" value="mushrooms">
+							<label for="mushrooms">Mushrooms</label><br>
+							<input type="checkbox" id="onions" name="topping" value="onions">
+							<label for="onions">Onions</label><br>
+							<input type="checkbox" id="sausage" name="topping" value="sausage">
+							<label for="sausage">Sausage</label><br>
+							<input type="checkbox" id="bacon" name="topping" value="bacon">
+							<label for="bacon">Bacon</label><br>
+							<input type="checkbox" id="extracheese" name="topping" value="extracheese">
+							<label for="extracheese">Extra cheese</label><br>
+							<input type="checkbox" id="blackolives" name="topping" value="blackolives">
+							<label for="blackolives">Black olives</label><br>
+							<input type="checkbox" id="greenpeppers" name="topping" value="greenpeppers">
+							<label for="greenpeppers">Green peppers</label><br>
+							<input type="checkbox" id="pineapple" name="topping" value="pineapple">
+							<label for="pineapple">Pineapple</label><br>
+							<input type="checkbox" id="spinach" name="topping" value="spinach">
+							<label for="spinach">Spinach</label><br>
+						</div>
+					</div>
+					<div>
+						<label for="crusttpye">Deep dish, thin crust or some other crust types</label>
+						<input type="text" id="crusttpye" name="crusttpye">
+					</div>
+					<div>
+						<label for="spicy">Spicy level: <span id="spicynumber"></span></label><br>
+						<input type="range" id="spicy" name="spicy" value="0" min="0" max="5">
+					</div>
+					<div>
+						<label for="eattpye">Take out, delivery, or eat-in</label>
+						<!-- <input type="text" id="eattpye" name="eattpye"> -->
+						<select>
+							<option value="Take out">Take out</option>
+							<option value="Delivery">Delivery</option>
+							<option value="Eat-in">Eat-in</option>
+						</select>
+					</div>
+					<div>
+						<label>Other requirements</label><br>
+						<textarea type="text" id="require" name="require" row="10" column="15" style="width:500px;height:200px;" placehoder="Any other requirements"></textarea>
+					</div>
+					<button type="Submit">Submit</button>
+				</fieldset>
+			</form>
+		</main>
+		<footer>
+			<small>Copyright (c) 2020 by Yu-Hsuan. All Right Reserved.</small>
+		</footer>
+
+		<script>
+			var slider = document.getElementById("spicy");
+			var output = document.getElementById("spicynumber");
+			output.innerHTML = slider.value;
+
+			slider.oninput = function() {
+			  output.innerHTML = this.value;
+			}
+		</script>
+	</body>
+</html>

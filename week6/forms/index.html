@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Register - Morning Coffee Home Delivery</title>
+		<link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+		<!-- STEP 5: link to the provided CSS to style the form -->
+		<link rel="stylesheet" type="text/css" href="./css/styles.css">
+	</head>
+	<body>
+		<header>
+			<div>
+				<h1>Morning Coffee</h1>
+				<h2>Fresh Coffee Delivery</h2>
+			</div>
+			<img src="images/coffee-logo.png" alt="coffee cup logo">
+		</header>
+		<main>
+			<div class="banner">
+				<h3>Register for Home Coffee Delivery</h3>
+			</div>
+			<!-- STEP 1: Set the action and method attribute for the form -->
+			<form id="register" action="process-form.php" method="get">
+				<!-- STEP 1: Fieldset and Legend -->
+				<fieldset>
+					<legend>Personal Information</legend>
+					<!-- STEP 2: Build an input element for First Name -->
+					<!-- STEP 3: Add labels and attributes for first name and last name. Include type, name, id, required, size, maxlength, and placeholder attributes -->
+					<div>
+						<label for="fname">First Name</label>
+						<input type="tet" id="fname" name="fname" required placeholder="Yu-Hsuan">
+					</div>
+					<div>
+						<label for="lname">Last Name</label>
+						<input type="text" id="lname" name="lname" required="required" placeholder="Huang">
+					</div>
+					<div>
+						<label for="address">Street Address</label>
+						<input type="text" id="address" name="address">
+					</div>
+					<!-- STEP 10: Change the input type for Province -->
+					<div>
+						<label for="province">Province</label>
+						<!-- <input type="text" id="province" name="province"> -->
+						<select id="province" name="province">
+							<option value="Alberta">Alberta</option>
+							<option value="British Columbia">British Columbia</option>
+							<option value="Manitoba">Manitoba</option>
+							<option value="New Brunswick">New Brunswick</option>
+							<option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+							<option value="Nova Scotia">Nova Scotia</option>
+							<option value="Ontario">Ontario</option>
+							<option value="Prince Edward Island">Prince Edward Island</option>
+							<option value="Quebec">Quebec</option>
+							<option value="Saskatchewan">Saskatchewan</option>
+						</select>
+					</div>
+					<!-- STEP 6a: Change input type for phone and email -->
+					<div>
+						<label for="phone">Phone Number</label>
+						<input type="tel" id="phone" name="phone">
+					</div>
+					<div>
+						<label for="email">Email</label>
+						<input type="email" id="email" name="email">
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Coffee Service Details</legend>
+					<p class="note">Do you prefer whole beans or ground coffee?</p>
+					<div>
+						<p class="selection-container">
+							<input type="radio" name="ground-type" value="whole-bean" id="whole-bean">
+							<label for="whole-bean">Whole Bean</label>
+						</p>
+						<p class="selection-container">
+							<input type="radio" name="ground-type" value="ground" id="ground">
+							<label for="ground">Ground</label>
+						</p>
+						<p class="selection-container">
+							<input type="radio" name="ground-type" value="mixed" id="mixed">
+							<label for="mixed">Mixed</label>
+						</p>
+					</div>
+					<p class="note">Which roast(s) would you like? Select all that apply</p>
+					<!-- STEP 7: Add names and values for our checkboxes. Multiple Values! -->
+					<div>
+						<p class="selection-container">
+							<input type="checkbox" id="light-roast" name="roast-type" value="light">
+							<label for="light-roast">Light</label>
+						</p>
+						<p class="selection-container">
+							<input type="checkbox" id="medium-roast" name="roast-type" value="medium">
+							<label for="medium-roast">Medium</label>
+						</p>
+						<!-- STEP 8: Add a third checkbox for dark roast -->
+						<p class="selection-container">
+							<input type="checkbox" id="dark-roast" name="roast-type" value="dark">
+							<label for="dark-roast">Dark</label>
+						</p>
+					</div>
+					<p class="note">Choose Your Coffee Plan</p>
+					<!-- STEP 9: Add values and names for radio buttons -->
+					<div>
+						<p class="selection-container">
+							<input type="radio" id="bi-weekly" name="plan" value="bi-weekly">
+							<label for="bi-weekly">Bi-Weekly Delivery</label>
+						</p>
+						<p class="selection-container">
+							<input type="radio" id="monthly" name="plan" value="monthly">
+							<label for="monthly">Monthly Delivery</label>
+						</p>
+						<p class="selection-container">
+							<input type="radio" id="bi-monthly" name="plan" value="bi-monthly">
+							<label for="bi-monthly">Bi-monthly Delivery</label>
+						</p>
+					</div>
+					<div>
+						<!-- STEP 12: Larger text control -->
+						<label for="delivery-instructions">Delivery Instructions</label>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Account Details</legend>
+					<!-- STEP 6b: Change input type for username and password -->
+					<div>
+						<label for="username">Username</label>
+						<input type="text" id="username" name="username">
+					</div>
+					<div>
+						<label for="password">Password</label>
+						<input type="password" id="password" name="password">
+					</div>
+					<div>
+						<!-- STEP 13: Date Picker -->
+						<label for="birthday">Birthday</label>
+						<input type="date" id="birthday" name="birthday">
+					</div>
+					<small>Free Coffee on your Birthday!</small>
+				</fieldset>
+				<div style="text-align: center;">
+					<!-- STEP 4: Add a submit button -->
+					<!-- <input type="submit" value="Order now"> -->
+					<button type="submit">Order now</button>
+				</div>
+			</form>
+		</main>
+		<footer>
+			<p><small>©2020 Morning Coffee. All rights reserved.</small></p>
+		</footer>
+	</body>
+</html>
