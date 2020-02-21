@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Category">
+    <!-- <meta name="author" content=""> -->
+    <!-- <link rel="icon" href="../../../../favicon.ico"> -->
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/starter-template.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">COMP1002</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div> -->
+    </nav>
+
+    <main role="main" class="container">
+
+      <div class="starter-template">
+        <h1>COMP 1002</h1>
+        <p class="lead">This is a category page. You can choose which project or lab page you want to see.</p>
+      </div>
+
+    <div class="container">
+      <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Coffee</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">Coffee Order</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Week5 & week6 in class lab</li>
+              <li>Attribute: id, type, name...</li>
+              <li>Input type pritice</li>
+              <li></li>
+            </ul>
+            <button type="button" onclick="indexPage.path_forms()" class="btn btn-block btn-primary">Go web page</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Assignment2</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">Pizza Order</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>try to use different type of input</li>
+              <li>try to use progress</li>
+              <li>try to use select</li>
+              <li>try to use form</li>
+            </ul>
+            <button type="button" onclick="indexPage.path_assign2()" class="btn btn-block btn-primary">Go web page</button>
+          </div>
+        </div>
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Canada Weather</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">Canada's Four Season</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Learn hyperlink</li>
+              <li>local path</li>
+            </ul>
+            <button type="button" onclick="indexPage.path_weather()" class="btn btn-block btn-primary">Go web page</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </main><!-- /.container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+      function myFunction() {
+        // var inp = document.getElementById("get-files");
+        // for (i = 0; i < inp.files.length; i++) {
+        //   let file = inp.files[i];
+        //   // do things with file
+        // }
+        const testFolder = '';
+        const fs = require('fs');
+
+        fs.readdirSync(testFolder).forEach(file => {
+          console.log(file);
+        });
+
+      }
+    </script>
+  </body>
+</html>

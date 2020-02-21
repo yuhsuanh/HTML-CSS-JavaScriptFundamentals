@@ -1,0 +1,114 @@
+/* Set base styling on the body */
+body {
+	font: 100%/1.4 'century gothic', Verdana, sans-serif;
+	color: #333;
+	margin: 0;
+	padding: 0;
+	background-color: white;
+}
+
+/* Page header */
+h1 {
+	font:400 2em/1 'Rochester', cursive;
+	margin: 0;
+	padding: 20px 40px;
+	display: inline-block;
+	text-align: center;
+	color: white;
+}
+
+header {
+	background-color: white;
+	width: 100%;
+	background-color: #1e1e1e;
+}
+
+/* Site navigation */
+nav {
+	float: right;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+}
+nav li {
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+nav li a {
+	text-decoration: none;
+	font-weight: 700;
+	display: block;
+	padding: 1.5em 2em;
+	width: 65px;
+	text-align: center;
+}
+nav li a:link {
+	color: white;
+}
+nav li a:visited {
+	color: white;
+}
+nav li a:hover {
+	color: #ff7a51;
+}
+nav li a:active {
+	color: salmon;
+}
+#page1 li:nth-of-type(1) a,
+#page2 li:nth-of-type(2) a,
+#page3 li:nth-of-type(3) a,
+#page4 li:nth-of-type(4) a,
+#page5 li:nth-of-type(5) a
+{
+	background-color: #2d2d2d;
+	color: #ff7a51;
+}
+
+/* Main page body */
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+	background-color:#FFF;
+}
+#content {
+	clear: both;
+	padding: 40px 80px 80px;
+}
+#content h2 {
+	font-size: 3em;
+	font-weight: 400;
+	text-align: center;
+	margin-top:0;
+}
+#content p {
+	margin-left: 40px;
+}
+#content p img {
+	width: 100%;
+	max-width: 400px;
+	margin-right: 40px;
+	float: left;
+	margin-bottom: 40px;
+}
+
+/* Page footer */
+footer {
+	background-color: #1e1e1e;
+	clear: left;
+	margin-top: 40px;
+	padding: 40px 0;
+}
+footer p {
+	margin: 0;
+	font-size: 0.8em;
+	color: white;
+	text-align: center;
+}
+
+footer a {
+	color: white;
+}
