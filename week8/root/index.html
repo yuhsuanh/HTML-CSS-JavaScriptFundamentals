@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Basics | COMP1002</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> <!-- This allows us to use the Google font 'Montserrat' which is on the Google servers.-->
+    <!-- STEP 1a: Link to the CSS Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Step 1b: Embed Styles - Let's use this method to create some LOCAL CSS rules that we want to apply to this page only (h2 element) -->
+    <style type="text/css">
+      /* Embedded Sytlesheet */
+      h2 {
+        color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>CSS Basics | COMP1002</h1>
+      <time datetime="2020-03-05">March 5th, 2020</time>
+    </header>
+    <main>
+      <div role="main" id="main-recipe">
+        <section id="recipe-heading">
+          <h2>Simple Banana Bread Recipe</h2>
+          <p class="sub-title">You'll never need another banana bread recipe ever again!</p>
+          <img src="img/banana-bread.jpeg" alt="Photo of banana bread" height="426" width="640">
+        </section>
+        <div class="mid-page">
+          <section id="recipe-ingredients">
+            <h3>Ingredients</h3>
+            <h4>Wet</h4>
+            <ul>
+              <li>1/2 cup butter</li>
+              <li>2 eggs, beaten</li>
+              <li>3 bananas, finely crushed <span class="sidenote">(for serious and extreme moist and delicious, try 4 bananas)</span></li>
+              <li>1⁄2 teaspoon vanilla <span class="sidenote">(optional)</span></li>
+            </ul>
+            <h4>Dry</h4>
+            <ul>
+              <li>1 cup sugar</li>
+              <li>1 1⁄2 cups flour</li>
+              <li>1 teaspoon baking soda</li>
+              <li>1⁄2 teaspoon salt</li>
+            </ul>
+          </section>
+          <section id="recipe-directions">
+            <h3>Directions</h3>
+            <ol>
+              <li>Remove odd pots and pans from oven.</li>
+              <li>Preheat oven to 350º / 180º.</li>
+              <li>Cream together butter and sugar.</li>
+              <li>Add eggs and crushed bananas.</li>
+              <!-- STEP 1c: INLINE CSS - Add a style attribute to the below STRONG element to affect it directly. INLINE styles will take precedence over embedded/internal AND external use with caution.-->
+              <li><strong style="color: green; font-weight: bold;">Combine well.</strong></li>
+              <li>Sift together flour, soda and salt. Add to creamed mixture. Add vanilla.</li>
+              <li>Mix just until combined. Do not overmix.</li>
+              <li>Pour into greased and floured loaf pan.</li>
+              <li>Bake at 350º / 180º for 55 minutes.</li>
+              <li>Keeps well, refrigerated.</li>
+            </ol>
+          </section>
+          <aside>
+            <section>
+              <p><span class="uppercase">Ready In:</span> 1hr 5min</p>
+              <p><span class="uppercase">Serves:</span> 10</p>
+              <p><span class="uppercase">Yield:</span> 1 loaf</p>
+            </section>
+            <section>
+              <p><small>Recipe adapted for educational purposes from <a href="http://www.geniuskitchen.com/recipe/best-banana-bread-2886" title="Best banana bread recipe" rel="external">Genius Kitchen</a></small></p>
+              <p><small><a href="https://www.pexels.com/photo/close-up-photography-of-banana-bread-on-saucer-830894/" title="Photo of Banana Bread" rel="external">Banana Bread Photo</a> by Airin Party from Pexels</small></p>
+            </section>
+          </aside>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>COMP1002</p>
+    </footer>
+  </body>
+</html>
