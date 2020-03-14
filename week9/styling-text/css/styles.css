@@ -1,0 +1,63 @@
+/* External CSS to control styling of text */
+
+/* STEP 2: Add base font styles (and other defaults) to the body (font-family, font-size, color, all very important) */
+/* Close body rule under step 3 */
+body {
+  /* STEP 2a: Font Family */
+  font-family: Tohoma, Verdana, sans-serif;
+  /* STEP 2b: Color */
+  color: #679;
+  /* STEP 2c: Font Size */
+  font-size: 100%;
+  /* STEP 2d: Font Weight */
+  font-weight: 700;
+  /* STEP 2e: Font Style */
+  font-style: italic;
+  /* STEP 2f: Line Height */
+	line-height: 1.2;
+/* STEP 13: Construct a declaration for the page text using the shorthand font syntax [ font-style ] [ font-weight ] [ font-size ]/[ line-height ] [ font-family ]; */
+	font: italic 700 16px/1.2 Tohoma, Verdana, sans-serif;
+/* STEP 3: Add a base color to the body */
+	background-color: black;
+}
+/* STEP 4a: Try absolute vs. relative sizing of text for headings 16px 24px 32px */
+header {
+	font-size: 20px;
+}
+h1 {
+	font-size: 2em;
+}
+h2 {
+	font-size: 2rem; /* reference root */
+	letter-spacing: .2rem;
+	word-spacing: 2rem;
+	text-transform: uppercase;
+	text-decoration: overline;
+}
+
+/* STEP 4b: Add size to header - watch how the em's react */
+
+/* STEP 8: Apply Kerning to h2 (letter-spacing) */
+
+/* STEP 9: Apply underline, overline and strikethrough to the h2 */
+
+/* STEP 10: Modify the word spacing for the h2 */
+
+/* STEP 12: Transform the text of the h2 (none | capitalize | uppercase | lowercase ) */
+
+/* STEP 5: Line height for paragraphs (leading - overwrite ) */
+p {
+	line-height: 1.6;
+	text-align: center;
+	/*width: 50%;*/
+	text-indent: 2em;
+}
+/* STEP 11: Change the indenting of the paragraphs */
+
+/* STEP 6: Align text left, right, center and justify for paragraphs */
+strong {
+	font-weight: 400;
+}
+/* STEP 7: Modify bold and italics, by applying to mark, strong and em */
+
+/* STEP 14: Add background Image (small) */
