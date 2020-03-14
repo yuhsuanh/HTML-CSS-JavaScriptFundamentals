@@ -1,0 +1,43 @@
+/* Follow the Instructions in Lab 8 */
+
+body {
+	/*shorthand font style*/
+	font: italic 200 16px/1.2 Tohoma, Verdana, sans-serif;
+	/*font color*/
+	color: #FAB;
+	/*background color*/
+	background-color: black;
+}
+
+h1 {
+	font-size: 32px;
+	/*text decoration: underline, overline, line-through, underline overline*/
+	text-decoration: overline;
+	/*text transition: uppercase lowercase*/
+	text-transform: uppercase;
+}
+
+h2 {
+	/*em: nearest parent, rem: root font size*/
+	font-size: 1.5em;
+	letter-spacing: .5em;
+	word-spacing: 1rem;
+	text-transform: uppercase;
+}
+
+p {
+	/*line height between each lines*/
+	line-height: 1.6;
+	/*text align: center, right, left(default)*/
+	text-align: center;
+	/*indentation of the first line*/
+	text-indent: 10rem;
+}
+
+strong {
+	font-weight: 700;
+}
+
+em {
+	font-style: italic;
+}
