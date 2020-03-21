@@ -1,0 +1,72 @@
+/*Global styles*/
+body {
+	margin: 0 0 0 0;
+	font-family: Tohoma, Verdana, sans-serif;
+}
+h1 {
+	margin: 0 0 0 0;
+	font-size: 3em;
+}
+h2 {
+	font=size: 2em;
+	font-weight: 700;
+}
+p {
+	font-size: 1em;
+	font-weight: 700;
+}
+
+/*Header area*/
+header {
+	background-color: #ebedef;
+	text-align: right;
+}
+
+header img {
+	height: 70px;
+}
+
+header > nav {
+	/*width: 100%;*/
+	display: flex;
+	align-items: center;
+	margin: 0 30px 0 30px;
+}
+
+header > nav > ul {
+	width: 100%;
+	/*display: flex;*/
+	text-align: right;
+	/*padding-left: 550px;*/
+	margin-bottom: 0;
+}
+header > nav > ul > li {
+	text-align: right;
+	display: inline-block;
+}
+
+header > nav > ul > li > a{
+	text-align: right;
+	font-size: 1em;
+	padding: 0 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	background-color: transparent;
+	color: black;
+}
+
+
+
+/*footer*/
+footer {
+	width: 100%;
+	background-color: #ebedef;
+	text-align: center;
+	height: 50px;
+	position: relative;
+}
+footer small {
+	position: absolute;
+	bottom: 10px;
+	left: 45%
+}
