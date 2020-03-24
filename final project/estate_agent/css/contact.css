@@ -13,7 +13,7 @@ h2 {
 }
 p {
 	font-size: 1em;
-	font-weight: 700;
+	font-weight: 500;
 }
 
 /*Header area*/
@@ -55,6 +55,67 @@ header > nav > ul > li > a{
 	color: black;
 }
 
+/*cover area*/
+.cover {
+	background-image: url('../img/contact_cover.jpg');
+	background-size: cover;
+	background-position: bottom;
+	opacity: 0.8;
+	width: 100%;
+	height: 500px;
+}
+
+/*Content area*/
+.content {
+	display: flex;
+}
+
+/*Left Div*/
+.left_div {
+	width: 35%;
+	text-align: center;
+}
+
+.info {
+	background-color: #0f5f91;
+	border-radius: 10px;
+	margin: 40px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: white;
+}
+
+.info hr {
+	border-style: ridge;
+}
+
+.info h2 {
+	font-size: 1.8em;
+}
+
+.info p {
+	word-spacing: 8px;
+}
+
+/*Right Div*/
+.right_div {
+	width: 65%;
+	padding-top: 30px;
+	margin: 0 30px 30px 0;
+}
+
+.right_div h1 {
+	padding-bottom: 10px;
+}
+
+.right_div h1 span{
+	font-size: 36px;
+  font-weight: 100;
+}
+
+.right_div h2 {
+	padding-top: 20px;
+}
 
 
 /*footer*/
@@ -69,4 +130,86 @@ footer small {
 	position: absolute;
 	bottom: 10px;
 	left: 45%
+}
+
+
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #e3e3e3;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Style the buttons inside the tab */
+.tab div {
+	width: 50%;
+  background-color: inherit;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 2% 0;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab div:hover {
+  background-color: #d6d6d6;
+}
+
+/* Create an active/current tablink class */
+.tab div.active {
+  background-color: black;
+}
+
+/* Style the tab content */
+.tab_content {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  font-size: 50px;
+}
+
+#meeting_content {
+  height: 270px;
+}
+
+#contact_content {
+  height: 340px;
+}
+
+.tab_content .flex {
+	display: flex;
+	margin: 10px;
+}
+
+.tab_content button {
+  margin: 20px 10px 0 10px;
+  font-size: medium;
+  text-transform: uppercase;
+  width: 200px;
+  height: 35px;
+  background-color: maroon; 
+  color: white;
+}
+
+.tab_content input {
+  margin: 10px 10px;
+  width: 100%;
+  font-size: x-large;
+}
+
+.tab_content textarea {
+  margin: 10px 10px;
+  width: 100%;
+  font-size: x-large;
+  height: 95px;
 }
