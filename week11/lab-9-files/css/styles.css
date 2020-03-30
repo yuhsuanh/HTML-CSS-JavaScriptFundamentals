@@ -1,0 +1,35 @@
+body {
+  font: 16px/1.4 "Arial", Helvetica, sans-serif;
+  color: #2d2d2d;
+  background-color: #efefef;
+}
+
+header, span, h1, div {
+  border: 2px dotted black;
+}
+
+/* Add your Lab Styles Below */
+#box-model {
+	margin: 40px;
+	border-width: 10px 20px;
+	padding: 10px 30px;
+}
+
+span {
+	display: block;
+}
+
+h1 {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+body {
+	/*background image setting*/
+  background-image: url(../img/fruit.jpg);
+  background-repeat: repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+  background-size: cover;
+}

@@ -1,0 +1,84 @@
+body {
+  font: 16px/1.4 "Courier New", Helvetica, sans-serif;
+  color: #2d2d2d;
+  background-color: #586BA4;
+}
+
+header, main, footer, section {
+  padding: 10px;
+  border: 2px dotted white;
+}
+
+header, main, footer {
+  background-color: #C9D3F0;
+}
+
+section {
+  background-color: #324376;
+  color: white;
+}
+
+/* Controlling the size of the image using CSS for demonstration purposes only. If you require an image to be resized it's best to scale or crop the original file before publishing */
+
+img {
+  max-width: 150px;
+  height: auto;
+}
+
+/* floating boxes and content - float property */
+
+/* STEP 1a: float the image */
+
+img {
+  float: left;
+}
+
+/* STEP 1b: clear the float */
+
+section {
+  /*clear: both;*/
+}
+
+/* STEP 1c: float the section boxes */
+
+section {
+  /*float: left;
+  width: 300px;*/
+}
+
+/* STEP 1d: Clear the section float */
+
+footer {
+  clear: left;
+}
+
+/* STEP 2: horizantally aligning content - inline-block */
+
+section {
+  /*display: inline-block;
+  width: 25%;*/
+}
+
+/* STEP 3: positioning: static, relative, absolute */
+
+header {
+  /*position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 400px;*/
+}
+
+/* STEP 4: hiding boxes and content with visibillity and display */
+
+header {
+  /*visibility: hidden;*/
+  /*display: none;*/
+}
+
+/* handling overflow with the overflow property */
+
+section {
+  height: 200px;
+  width: 200px;
+  overflow: scroll;
+}

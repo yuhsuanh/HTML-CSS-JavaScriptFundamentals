@@ -1,0 +1,54 @@
+body {
+  font: 16px/1.4 "Arial", Helvetica, sans-serif;
+  color: #2d2d2d;
+  background-color: #efefef;
+  text-align: center;
+}
+
+header, div {
+  border: 3px solid black;
+  margin-bottom: 40px;
+}
+
+div {
+  height: 300px;
+}
+
+header {
+  padding: 100px 5px;
+}
+
+/* STEP 1: Apply background image lemons to header */
+
+header {
+  background-image: url(../img/lemons.jpg);
+}
+
+/* STEP 2: Background Repeat property - oranges */
+
+#repeat {
+  background-image: url(../img/oranges.jpg);
+  background-repeat: repeat-x;
+}
+
+/* STEP 3: Background Position property - apples */
+
+#position {
+  background-image: url(../img/apples.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+/* STEP 4: Background Attachment property - watermelon */
+
+#attachment {
+  background-image: url(../img/watermelon.jpg);
+  background-attachment: fixed;
+}
+
+/* STEP 5: Background Size property - plums */
+
+#size {
+  background-image: url(../img/plums.jpg);
+  background-size: cover;
+}

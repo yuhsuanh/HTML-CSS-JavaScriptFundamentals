@@ -1,0 +1,51 @@
+body {
+  font: 16px/1.4 Arial, Helvetica, sans-serif;
+  color: #2d2d2d;
+  background-color: #fefefe;
+}
+
+/* CSS Rules to outline boxes for demonstration purposes */
+
+header, main, footer {
+  border: 1px solid red;
+}
+
+h1, h2, p {
+  border: 1px solid blue;
+}
+
+section {
+  border: 2px solid green;
+}
+
+em, small {
+  border: 1px solid black;
+  background-color: lightblue;
+}
+
+/* STEP 1a: Set the display property to inline for a all block elements */
+
+header, main, footer, section, h1, h2, p {
+	/*display: inline;*/
+}
+
+/* STEP 2: Set the display property to block for an inline element */
+
+em {
+	/*display: block;*/
+}
+
+/* STEP 3: Add custom box model values to an inline element and watch how it responds then change its display property value */
+
+em {
+	width: 500px;
+	margin: 20px;
+	padding: 20px;
+	display: inline-block;
+}
+
+/* STEP 4: Use the display property to control the inner display of an element - flex */
+
+main {
+	display: flex;
+}
