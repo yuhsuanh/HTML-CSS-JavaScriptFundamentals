@@ -1,0 +1,38 @@
+body {
+  font: 16px/1.4 Arial, Helvetica, sans-serif;
+  color: #2d2d2d;
+  background-color: #fefefe;
+}
+
+#container {
+  background-color: lightblue;
+
+/* STEP 1a: Set the border properties on the #container - border-width, border-style, border-color */
+	border-width: 3px;
+	border-style: solid;
+	border-color: red;
+
+/* STEP 1b: Control one of the four borders independently of the others */
+	border-right-width: 20px;
+	border-bottom-style: dotted;
+	border-left-color: yellow;
+
+/* STEP 1c: Apply shorthand to a border property using the clock rule (TRBL) */
+	border-color: red yellow blue green;
+
+/* STEP 1d: Use the border shorthand for uniform border */
+	border: 10px solid black;
+
+/* STEP 2: Set padding values on the #container element */
+	padding: 40px;
+
+/* STEP 3a: Control the width of the #container with a fixed unit (px) */
+	width:800px;
+
+/* STEP 3b: Change the width to a relative unit of measure (%) */
+	width: 50%;
+
+/* STEP 4: Add a margin to the #container */
+	margin: 0 auto;
+
+}
