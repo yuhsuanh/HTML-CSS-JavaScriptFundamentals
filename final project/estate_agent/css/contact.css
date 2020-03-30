@@ -79,7 +79,7 @@ header > nav > ul > li > a{
 .info {
 	background-color: #0f5f91;
 	border-radius: 10px;
-	margin: 40px;
+	margin: 120px 40px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	color: white;
@@ -115,6 +115,13 @@ header > nav > ul > li > a{
 
 .right_div h2 {
 	padding-top: 20px;
+}
+
+/*map area*/
+.map_content {
+	padding: 0;
+	margin: 0;
+	width: 100%;
 }
 
 
