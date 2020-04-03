@@ -6,6 +6,7 @@ body {
 h1 {
 	margin: 0 0 0 0;
 	font-size: 3em;
+	padding-top: 30px;
 }
 h2 {
 	font=size: 2em;
@@ -55,7 +56,89 @@ header > nav > ul > li > a{
 	color: black;
 }
 
+/*cover area*/
+.cover {
+	background-image: url('../img/sale_cover.jpg');
+	background-size: cover;
+	background-position: center;
+	opacity: 0.6;
+	width: 100%;
+	height: 500px;
+}
 
+/*service area*/
+.service_area {
+	text-align: center;
+}
+
+
+/*.service_area h1 {
+	margin-top: 30px;
+}*/
+.service_list {
+	display: flex;
+	margin: 40px auto;
+}
+.service {
+	margin: 0 auto;
+}
+.service img {
+	width: 200px;
+}
+
+/*salw content area*/
+.sale_content {
+	background-image: url('../img/sale_block.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+	width: 100%;
+	float: flex;
+}
+/*.left_content {
+	float: left;
+	width: 50%;
+}*/
+.right_content {
+	float: right;
+	width: 50%;
+	margin-right: 30px;
+}
+.sale_content h1 {
+	font-size: 2.5em;
+}
+.sale_content p {
+	word-spacing: 2px;
+}
+
+/*sale info area*/
+.sale_info {
+	background-color: black;
+	color: white;
+	text-align: center;
+	height: 500px;
+}
+.flex {
+	display: flex;
+	margin: 10px;
+}
+.sale_info form {
+	padding: 20px 140px;
+}
+.sale_info form input {
+	margin: 10px 10px;
+  width: 100%;
+  font-size: x-large;
+}
+.sale_info form button {
+	margin: 20px 10px 0 10px;
+  font-size: medium;
+  text-transform: uppercase;
+  width: 200px;
+  height: 35px;
+  background-color: maroon; 
+  color: white;
+}
 
 /*footer*/
 footer {

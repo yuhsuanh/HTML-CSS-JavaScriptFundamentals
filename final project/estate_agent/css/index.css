@@ -55,15 +55,24 @@ header > nav > ul > li > a{
 	color: black;
 }
 
+/*cover area*/
+.cover {
+	background-image: url('../img/index_cover.jpg');
+	background-size: cover;
+	background-position: center;
+	opacity: 0.6;
+	width: 100%;
+	height: 500px;
+}
 
 /*block 1 area*/
 .block1 {
 	background-image: url('../img/block1.jpg') !important;
 	background-size: cover;
-	background-position: bottom;
+	background-position: center;
 	/*opacity: 0.5;*/
 	width: 100%;
-	height: 800px;
+	height: 600px;
 	text-align: center;
 }
 
