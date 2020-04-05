@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Navigation | COMP 1002</title>
+		<!-- Embedded Google Web Fonts Baskervville and Lato -->
+		<link href="https://fonts.googleapis.com/css?family=Baskervville:400,400i|Lato:400,700&display=swap" rel="stylesheet">
+		<!-- Custom Stylesheet -->
+		<link href="css/style.css" rel="stylesheet">
+		<!-- Embedded Styles -->
+		<style>
+			ol {
+				list-style-type: none;
+				margin: 0 auto;
+				display: flex;
+			}
+
+			ol li {
+				flex-grow: 1;
+				margin: 5px;
+			}
+
+			ol li a {
+				display: block;
+				text-decoration: none;
+				font: 700 1em "Lato", sans-serif;
+				padding: 20px;
+				text-align: center;
+				background-color: #D6E5E3;
+				transition: .5s;
+			}
+
+			ol li a:hover {
+				background-color: #121212;
+				color: #D6E5E3;
+			}
+		</style>
+	</head>
+	<body id="recipes">
+		<header>
+			<h1>Our Recipes</h1>
+			<p class="sub-heading">A collection of our favourites</p>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index.html" title="Go to the home page">Home</a></li>
+				<li><a href="about.html" title="Go to the about page">About</a></li>
+				<li><a href="recipes.html" class="active" title="Go to the recipes page">Recipes</a>
+					<ul>
+						<li><a href="recipes/fusilli.html" title="Go to the fusilli page">Fusilli</a></li>
+						<li><a href="recipes/pesto-spaghetti.html" title="Go to the pesto spaghetti page">Pesto Spaghetti</a></li>
+						<li><a href="recipes/ravioli.html" title="Go to the ravioli page">Ravioli</a></li>
+						<li><a href="recipes/penne.html" title="Go to the penne page">Penne</a></li>
+					</ul>
+				</li>
+				<li><a href="contribute.html" title="Go to the contribute page">Contribute</a></li>
+				<li><a href="contact.html" title="Go to the contact page">Contact</a></li>
+			</ul>
+		</nav>
+		<div id="container">
+			<main>
+				<h2>Our Favourite Recipes</h2>
+				<ol>
+					<li><a href="recipes/fusilli.html" title="Go to the fusilli page">Fusilli</a></li>
+					<li><a href="recipes/pesto-spaghetti.html" title="Go to the pesto spaghetti page">Pesto Spaghetti</a></li>
+					<li><a href="recipes/ravioli.html" title="Go to the ravioli page">Ravioli</a></li>
+					<li><a href="recipes/penne.html" title="Go to the penne page">Penne</a></li>
+				</ol>
+				<img src="img/basil-pasta.jpg" alt="noodles and basil" style="width: 100%; margin-top: 40px;">
+			</main>
+			<footer>
+				<p><small>Navigation COMP 1002</small></p>
+			</footer>
+		</div>
+	</body>
+</html>

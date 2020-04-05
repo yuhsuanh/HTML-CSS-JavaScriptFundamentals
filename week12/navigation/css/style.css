@@ -1,0 +1,217 @@
+/* Remove margin and padding for easier styling */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Text formatting on the body or html element */
+
+body {
+  font: 16px/1.4 "Baskervville", serif;
+  color: #333;
+  background-color: white;
+}
+
+/* Heading styles */
+
+h1 {
+  color: #424874;
+  font-size: 4em;
+  margin: 0;
+  padding: 0;
+}
+
+h2, h3, h4, h5, h6 {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 2em;
+}
+
+.sub-heading {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  color: #424874;
+}
+
+/* Header Styling */
+
+header {
+  text-align: center;
+  background-color: #DCD6F7;
+  padding: 40px 15px;
+}
+
+/* Main Styling */
+
+#container {
+  background-color: white;
+}
+
+main {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 60px 10px;
+}
+
+main h2 {
+  color: #424874;
+  text-align: center;
+  margin: 30px 10px;
+}
+
+main a {
+  color: #424874;
+}
+
+main p.content {
+  text-indent: 2em;
+}
+
+main small {
+  font-style: italic;
+}
+
+/* Footer Styling */
+
+footer {
+  padding: 40px;
+  text-align: center;
+  background-color: #121212;
+  color: #ccc;
+  margin-top: 20px;
+}
+
+/* Screencast - Navigation Styling and Layout */
+
+  /* Step 1a Outline boxes for easier layout application */
+
+  /* Step 8 remove these borders */
+
+    /*nav ul {
+      border: 1px solid red;
+    }
+
+    nav li {
+      border: 1px solid orange;
+    }*/
+
+  /* Step 1b Apply background to anchors to visualize clickable area */
+
+    nav a {
+      /*background-color: lightblue;*/
+      /* Step 7a change display of anchors to fill their parent space */
+      display: block;
+      /* Step 7b remove underline */
+      text-decoration: none;
+      /* Step 7c Change the background color to match the color scheme #A6B1E1*/
+      background-color: #A6B1E1;
+      /* Step 7d Change the color of the anchor text #242424 */
+      color: #242424;
+      /* Step 7e increase visibility of text  */
+      font: 700 0.8em "Lato", sans-serif;
+      text-transform: uppercase;
+      /* Step 7f Increase clickable area */
+      padding: 15px;
+      /* Step 7g align center */
+      text-align: center;
+    }
+
+  /* Create interaction styling  */
+
+    /* Step 9 anchors change on hover background - #424874 */
+
+    nav a:hover {
+      background-color: #424874;
+      color: white;
+    }
+
+
+    /* Step 10 active class styling */
+    nav a.active {
+      background-color: #424874;
+      color: white;
+    }
+
+  /* Remove default styles and spacing in navigation */
+
+    /* Step 2a remove list bullet points and padding */
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    /* Step 2b Remove nav padding and margin   */
+
+    nav * {
+      margin: 0;
+      padding: 0;
+    }
+
+  /* Navigation Layout */
+
+    /* Step 3a Create horizantal layout of navigation using display property */
+
+    /* ----------
+     This selector targets all list item elements
+     ---------- */
+    li {
+      display: inline-block;
+      /* Step 6 apply the same width to all list items */
+      width: 125px;
+    }
+
+    /* Step 3b align the nested list vertically */
+
+      /* ----------
+       This selector targets only list item elements that are inside of an unordered list which is also inside of a list item. This will only target our drop-down menu list items
+       ---------- */
+      li ul li {
+        display: block;
+      }
+
+    /* Step 3c position the drop down box to remove it from it's fixed location */
+
+      /* ----------
+       This selector targets only unordered lists which is also inside of a list item. This will only target our drop-down menu parent list box
+       ---------- */
+      li ul {
+        position: absolute;
+        /* Step 4 hide the list */
+        display: none;
+      }
+
+    /* Step 5 show the list only on hover */
+
+    /* ----------
+     This selector targets the same list that what hidden above, however the pseudo class of hover as been added to the parent list item so this will ONLY HAPPEN on hover
+     ---------- */
+     li:hover ul {
+      display: block;
+     }
+
+  /* Center the navigation and extend the visual styling */
+
+  /* Step 11 add a bg-color #A6B1E1 to nav */
+  nav {
+    background-color: #A6B1E1;
+  }
+
+  /* Extra example: To align right */
+  nav > ul {
+
+  }
+
+  /* Extra example: Stick to top of page */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  header {
+    margin-top: 46px;
+  }
