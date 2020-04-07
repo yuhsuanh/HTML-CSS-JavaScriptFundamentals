@@ -56,6 +56,11 @@ header > nav > ul > li > a{
 	color: black;
 }
 
+header > nav > ul > li > a:hover{
+	border-bottom: 3px solid currentColor;
+  padding-bottom: 5px;
+}
+
 /*cover area*/
 .cover {
 	background-image: url('../img/sale_cover.jpg');

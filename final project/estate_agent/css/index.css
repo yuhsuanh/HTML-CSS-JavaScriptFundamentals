@@ -55,6 +55,11 @@ header > nav > ul > li > a{
 	color: black;
 }
 
+header > nav > ul > li > a:hover{
+	border-bottom: 3px solid currentColor;
+  padding-bottom: 5px;
+}
+
 /*cover area*/
 .cover {
 	background-image: url('../img/index_cover.jpg');
@@ -112,6 +117,7 @@ header > nav > ul > li > a{
 }
 .block2 p {
 	font-weight: 500;
+	padding: 0 80px;
 }
 .block2 .buying {
 	background-color: rgb(0, 51, 153);

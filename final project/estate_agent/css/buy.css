@@ -55,6 +55,11 @@ header > nav > ul > li > a{
 	color: black;
 }
 
+header > nav > ul > li > a:hover{
+	border-bottom: 3px solid currentColor;
+  padding-bottom: 5px;
+}
+
 /*cover area*/
 .cover {
 	background-image: url('../img/buy_cover.jpg');
@@ -68,11 +73,11 @@ header > nav > ul > li > a{
 /*listings*/
 .lists {
 	text-align: center;
-	background-color: #aeb6c2;
+	background-color: white;
 }
 .lists h1 {
 	padding: 30px 0;
-	color: darkslategrey;
+	color: black;
 }
 
 /*info area*/
@@ -121,7 +126,7 @@ footer small {
 
 
 .content {
-	padding: 30px 0;
+	padding: 30px 0 40px 0;
   /*height: 50rem;*/
   color: white;
   display: -webkit-box;
